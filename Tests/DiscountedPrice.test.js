@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Read the HTML file
-const html = fs.readFileSync(path.resolve(__dirname, '../Webbshop/index.html'), 'utf8');
+const html = fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf8');
 
 let dom;
 let container;
@@ -15,15 +15,15 @@ beforeEach(() => {
   container = dom.window.document.body;
 });
 
-test('check if "rabatt" class number is lower than the "text-muted ml-2" class', () => {
-  // Get the elements by their class names
+test('check if rabatt is lower than original', () => {
   const rabattElement = container.querySelector('.rabatt');
   const textMutedElement = container.querySelector('.text-muted.ml-2');
 
-  // Extract the numerical values from the elements' text content
   const rabattValue = parseFloat(rabattElement.textContent.replace('kr', ''));
-  const textMutedValue = parseFloat(textMutedElement.textContent.replace('kr', ''));
+  const ordinaryValue = parseFloat(textMutedElement.textContent.replace('kr', ''));
 
-  // Check if the "rabatt" class number is lower than the "text-muted ml-2" class
-  expect(rabattValue).toBeLessThan(textMutedValue);
+  console.log('rabattValue:', rabattValue);
+  console.log('textMutedValue:', ordinaryValue);
+
+  expect(rabattValue).toBeLessThan(ordinaryValue);
 });
