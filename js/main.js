@@ -109,19 +109,22 @@
 
             // Loop through each row in the table
             $('.table tbody tr').each(function () {
-                var price = parseFloat($(this).find('.align-middle:eq(1)').text().replace('$', ''));
+                var price = parseFloat($(this).find('.align-middle:eq(1)').text().replace('kr', '').replace(',', '.'));
                 var quantity = parseInt($(this).find('.quantity input').val());
                 var subtotal = price * quantity;
 
-
                 total += subtotal;
-
+                
                 // Update the total column in the current row
-                $(this).find('.align-middle:eq(3)').text('$' + subtotal.toFixed(2));
+                $(this).find('.align-middle:eq(3)').text(subtotal.toFixed(2).replace('.', ',') + ' kr');
             });
 
             // Update the total in the summary section
-            $('.bg-light.p-30.mb-5 .d-flex.justify-content-between.mt-2 h5:eq(1)').text('$' + total.toFixed(2));
+            var updatedTotal = total + 49; // Add 49 to the total
+            $('.bg-light.p-30.mb-5 .d-flex.justify-content-between.mt-2 h5:eq(1)').text(updatedTotal.toFixed(2).replace('.', ',') + ' kr');
+
+            // Update the live sum in the "Totalt" section
+            $('#totaltValue').text(total.toFixed(2).replace('.', ',') + ' kr');
         }
     });
 
