@@ -1,3 +1,19 @@
+let cart = []; 
+
+
+
+const addCartBtns = document.querySelectorAll('.product-action .btn-outline-dark');
+
+addCartBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const productId = btn.closest('.product-item').getAttribute('data-product-id');
+    const productName = btn.closest('.product-item').querySelector('.h6.text-decoration-none').textContent;
+    const productPrice = parseInt(btn.closest('.product-item').querySelector('.rabatt').textContent);
+
+    addToCart(productId, productName, productPrice); // Add product to cart
+  });
+});
+
 (function ($) {
     "use strict";
     
