@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test-verifiering", "test-verifiering\test-verifiering.csproj", "{C729B1D7-D8A9-4A73-9CE7-315E600FF62A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-verifiereingTests", "test-verifiereingTests\test-verifiereingTests.csproj", "{70EB361A-1055-4C5C-8723-D1C1D9019B3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C729B1D7-D8A9-4A73-9CE7-315E600FF62A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C729B1D7-D8A9-4A73-9CE7-315E600FF62A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C729B1D7-D8A9-4A73-9CE7-315E600FF62A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C729B1D7-D8A9-4A73-9CE7-315E600FF62A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70EB361A-1055-4C5C-8723-D1C1D9019B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70EB361A-1055-4C5C-8723-D1C1D9019B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70EB361A-1055-4C5C-8723-D1C1D9019B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70EB361A-1055-4C5C-8723-D1C1D9019B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F624E3FE-D4B7-4522-9E9F-5F34FA027D94}
+	EndGlobalSection
+EndGlobal
