@@ -1,10 +1,4 @@
-/******* Bootstrap Theming ********/
-/*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -63,6 +57,68 @@ body {
   text-align: left;
   background-color: #F5F5F5;
 }
+
+.topbar-container {
+  display: flex;
+  align-items: center;
+  padding-left: 3% ;
+  padding-bottom: 1%;
+  margin-top: 2%;
+}
+
+.support{
+  margin-left: 50%;
+  padding-right: 1%;
+}
+
+.navbar-container{
+  background-color: #3D464D;
+  margin-bottom: 30px;
+
+}
+
+.navbar-button {
+  display: flex;
+  align-items: center;
+  justify-content: between;
+  background-color: #FFD333;
+  width: 100%;
+  height: 65px;
+  padding: 0 30px;
+  border: 1px solid white;
+}
+
+.kategori-knapp {
+  color: black;
+  margin: 0;
+  i {
+    margin-right: 10px;
+  }
+}
+
+.cartBtn {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: #6c757d;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
