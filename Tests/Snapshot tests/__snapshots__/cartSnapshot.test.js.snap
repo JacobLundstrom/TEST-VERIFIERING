@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HTML Snapshot ska matcha snapshot 1`] = `
+"<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -361,6 +364,65 @@
     <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+    
+            // Function to get the shopping cart
+            function getShoppingCart() {
+                $.ajax({
+                    url: '/api/your-existing-controller/shoppingcart',
+                    type: 'GET',
+                    success: function (data) {
+                        console.log('Shopping Cart:', data);
+                        // Update the UI to display the shopping cart information
+                        $('.cartBtn').text(data.length); // Update the cart count in the UI
+                    },
+                    error: function (error) {
+                        console.error('Error:', error);
+                    }
+                });
+            }
+    
+            // Function to add a product to the shopping cart
+            function addProductToCart(product) {
+                $.ajax({
+                    url: '/api/your-existing-controller/shoppingcart/add',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(product),
+                    success: function () {
+                        console.log('Product added to cart successfully.');
+                        // Optionally, update the UI to reflect the change in the cart
+                        getShoppingCart();
+                    },
+                    error: function (error) {
+                        console.error('Error:', error);
+                    }
+                });
+            }
+    
+            // Click event for the "Add to Cart" button
+            $('.addToCartButton').on('click', function () {
+                // Get product information from the button's data attributes
+                var productName = $(this).data('product-name');
+                var productPrice = $(this).data('product-price');
+    
+                // Create a product object
+                var product = {
+                    Name: productName,
+                    Price: productPrice
+                };
+    
+                // Call the function to add the product to the cart
+                addProductToCart(product);
+            });
+    
+            // You can replicate similar code for other buttons
+    
+        });
+        </script>
 </body>
 
-</html>
+</html>"
+`;

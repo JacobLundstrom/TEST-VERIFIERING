@@ -10,6 +10,10 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0",
+    "jquery": "^3.7.1",
     "jsdom": "^23.0.1"
+  },
+  "dependencies": {
+    "build": "^0.1.4"
   }
 }

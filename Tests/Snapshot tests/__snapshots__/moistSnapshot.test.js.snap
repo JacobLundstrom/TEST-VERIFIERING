@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HTML Snapshot ska matcha snapshot 1`] = `
+"<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -43,7 +46,6 @@
     </div>
 </div>
 <!-- Topbar End -->
-
     <!-- Navbar Start -->
     <div class="navbar-container">
         <div class="row px-xl-5">
@@ -100,7 +102,6 @@
     </div>
     <!-- Navbar End -->
 
-
     <!-- Breadcrumb Start -->
     <div class="container-fluid">
         <div class="row px-xl-5">
@@ -108,7 +109,7 @@
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="#">Home</a>
                     <a class="breadcrumb-item text-dark" href="#">Shop</a>
-                    <span class="breadcrumb-item active">Shopping Cart</span>
+                    <span class="breadcrumb-item active">Shop Detail</span>
                 </nav>
             </div>
         </div>
@@ -116,163 +117,43 @@
     <!-- Breadcrumb End -->
 
 
-    <!-- Cart Start -->
-    <div class="container-fluid">
+    <!-- Shop Detail Start -->
+    <div class="container-fluid pb-5">
         <div class="row px-xl-5">
-            <div class="col-lg-8 table-responsive mb-5">
-                <table class="table table-light table-borderless table-hover text-center mb-0">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th>Produkter</th>
-                            <th>Pris</th>
-                            <th>Antal</th>
-                            <th>Totalt</th>
-                            <th>Radera</th>
-                        </tr>
-                    </thead>
-                    <tbody class="align-middle">
-                        <tr>
-                            <td class="align-middle"><img src="img/product-1.jpg" alt="" style="width: 50px;"> Produkt namn</td>
-                            <td class="align-middle">150kr</td>
-                            <td class="align-middle">
-                                <div class="input-group quantity mx-auto" style="width: 100px;">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus" >
-                                        <i class="fa fa-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="1">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="align-middle">150kr</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle"><img src="img/product-2.jpg" alt="" style="width: 50px;"> Product Name</td>
-                            <td class="align-middle">150kr</td>
-                            <td class="align-middle">
-                                <div class="input-group quantity mx-auto" style="width: 100px;">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus" >
-                                        <i class="fa fa-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="1">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="align-middle">150kr</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle"><img src="img/product-3.jpg" alt="" style="width: 50px;"> Product Name</td>
-                            <td class="align-middle">150kr</td>
-                            <td class="align-middle">
-                                <div class="input-group quantity mx-auto" style="width: 100px;">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus" >
-                                        <i class="fa fa-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="1">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="align-middle">150kr</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle"><img src="img/product-4.jpg" alt="" style="width: 50px;"> Product Name</td>
-                            <td class="align-middle">150kr</td>
-                            <td class="align-middle">
-                                <div class="input-group quantity mx-auto" style="width: 100px;">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus" >
-                                        <i class="fa fa-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="1">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="align-middle">150kr</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle"><img src="img/product-5.jpg" alt="" style="width: 50px;"> Product Name</td>
-                            <td class="align-middle">150kr</td>
-                            <td class="align-middle">
-                                <div class="input-group quantity mx-auto" style="width: 100px;">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus" >
-                                        <i class="fa fa-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="1">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="align-middle">150kr</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="col-lg-5 mb-30">
+                <img class="w-100 h-100" src="img/product-8.jpg" alt="Image">
             </div>
-            <div class="col-lg-4">
-                <form class="mb-30" action="">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-0 p-4" placeholder="Rabatt Kupong">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary">Applicera kupong</button>
+
+            <div class="col-lg-7 h-auto mb-30">
+                <div class="h-100 bg-light p-30">
+                    <h3>Moisturizer</h3>
+                    <h3 class="font-weight-semi-bold mb-4">90kr</h3>
+                    <p class="mb-4">Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr erat diam stet sit
+                        clita ea. Sanc ipsum et, labore clita lorem magna duo dolor no sea
+                        Nonumy</p>
+ 
+                    <div class="d-flex align-items-center mb-4 pt-2">
+                        <div class="input-group quantity mr-3" style="width: 130px;">
+                            <div class="input-group-btn">
+                                <button class="btn btn-primary btn-minus">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <input type="text" class="form-control bg-secondary border-0 text-center" value="1">
+                            <div class="input-group-btn">
+                                <button class="btn btn-primary btn-plus">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                </form>
-                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Kundvagn</span></h5>
-                <div class="bg-light p-30 mb-5">
-                    <div class="border-bottom pb-2">
-                        <div class="d-flex justify-content-between mb-3">
-                            <h6>Totalt:</h6>
-                            <h6 id="totaltValue">499kr</h6>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-medium">Frakt: </h6>
-                            <h6 class="font-weight-medium">49kr</h6>
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="d-flex justify-content-between mt-2">
-                            <h5>Totalt</h5>
-                            <h5>548kr</h5>
-                        </div>
-                        <button class="btn btn-block btn-primary font-weight-bold my-3 py-3">Fortsätt till betalning</button>
+                        <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i> Add To
+                            Cart</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Cart End -->
-
+    <!-- Shop Detail End -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-secondary mt-5 pt-5">
@@ -361,6 +242,8 @@
     <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
-</html>
+</html>"
+`;
