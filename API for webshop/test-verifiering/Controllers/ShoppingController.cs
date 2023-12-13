@@ -10,7 +10,7 @@ namespace test_verifiering.Controllers
     [Route("api/[controller]")]
     public class ShoppingController : ControllerBase
     {
-        public static ShoppingCart shoppingCart = new ShoppingCart();
+        public static ShoppingCart shoppingCart = new();
       
         public ShoppingController()
         {
