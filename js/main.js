@@ -1,3 +1,19 @@
+let cart = []; 
+
+
+
+const addCartBtns = document.querySelectorAll('.product-action .btn-outline-dark');
+
+addCartBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const productId = btn.closest('.product-item').getAttribute('data-product-id');
+    const productName = btn.closest('.product-item').querySelector('.h6.text-decoration-none').textContent;
+    const productPrice = parseInt(btn.closest('.product-item').querySelector('.rabatt').textContent);
+
+    addToCart(productId, productName, productPrice); // Add product to cart
+  });
+});
+
 (function ($) {
     "use strict";
     
@@ -18,7 +34,6 @@
         $(window).resize(toggleNavbarMethod);
     });
     
-    
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -31,7 +46,6 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
-
 
     // Vendor carousel
     $('.vendor-carousel').owlCarousel({
@@ -59,7 +73,6 @@
         }
     });
 
-
     // Related carousel
     $('.related-carousel').owlCarousel({
         loop: true,
@@ -83,7 +96,6 @@
         }
     });
 
-
     // Product Quantity
     $('.quantity button').on('click', function () {
         var button = $(this);
@@ -99,6 +111,37 @@
         }
         button.parent().parent().find('input').val(newVal);
     });
-    
-})(jQuery);
 
+    $(document).ready(function () {
+        updateTotal(); 
+
+        $('.quantity button').on('click', function () {
+            updateTotal();
+        });
+
+        // Function to update the total price
+        function updateTotal() {
+            var total = 0;
+
+            // Loop through each row in the table
+            $('.table tbody tr').each(function () {
+                var price = parseFloat($(this).find('.align-middle:eq(1)').text().replace('kr', '').replace(',', '.'));
+                var quantity = parseInt($(this).find('.quantity input').val());
+                var subtotal = price * quantity;
+
+                total += subtotal;
+                
+                // Update the total column in the current row
+                $(this).find('.align-middle:eq(3)').text(subtotal.toFixed(2).replace('.', ',') + ' kr');
+            });
+
+            // Update the total in the summary section
+            var updatedTotal = total + 49; // Add 49 to the total
+            $('.bg-light.p-30.mb-5 .d-flex.justify-content-between.mt-2 h5:eq(1)').text(updatedTotal.toFixed(2).replace('.', ',') + ' kr');
+
+            // Update the live sum in the "Totalt" section
+            $('#totaltValue').text(total.toFixed(2).replace('.', ',') + ' kr');
+        }
+    });
+
+})(jQuery);
