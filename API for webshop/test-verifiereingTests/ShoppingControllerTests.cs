@@ -1,8 +1,14 @@
 namespace test_verifiereingTests
 {
     [TestClass]
-    public class UnitTest1
+    public class ShoppingControllerTests
     {
+        [TestCleanup()]
+        public void Cleanup()
+        {
+            
+        }
+
         [TestMethod]
         public void TestMethod1()
         {

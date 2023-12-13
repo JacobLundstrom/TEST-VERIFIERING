@@ -31,3 +31,36 @@ F:\GITHUB\starter\test-verifiering\test-verifiering\obj\Debug\net7.0\refint\test
 F:\GITHUB\starter\test-verifiering\test-verifiering\obj\Debug\net7.0\test-verifiering.pdb
 F:\GITHUB\starter\test-verifiering\test-verifiering\obj\Debug\net7.0\test-verifiering.genruntimeconfig.cache
 F:\GITHUB\starter\test-verifiering\test-verifiering\obj\Debug\net7.0\ref\test-verifiering.dll
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\bin\Debug\net7.0\appsettings.Development.json
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\bin\Debug\net7.0\appsettings.json
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\bin\Debug\net7.0\test-verifiering.exe
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\bin\Debug\net7.0\test-verifiering.deps.json
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\bin\Debug\net7.0\test-verifiering.runtimeconfig.json
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\bin\Debug\net7.0\test-verifiering.dll
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\bin\Debug\net7.0\test-verifiering.pdb
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\bin\Debug\net7.0\Microsoft.OpenApi.dll
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\test-verifiering.csproj.AssemblyReference.cache
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\test-verifiering.GeneratedMSBuildEditorConfig.editorconfig
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\test-verifiering.AssemblyInfoInputs.cache
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\test-verifiering.AssemblyInfo.cs
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\test-verifiering.csproj.CoreCompileInputs.cache
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\test-verifiering.MvcApplicationPartsAssemblyInfo.cs
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\test-verifiering.MvcApplicationPartsAssemblyInfo.cache
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\staticwebassets\msbuild.test-verifiering.Microsoft.AspNetCore.StaticWebAssets.props
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\staticwebassets\msbuild.build.test-verifiering.props
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.test-verifiering.props
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.test-verifiering.props
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\staticwebassets.pack.json
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\staticwebassets.build.json
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\staticwebassets.development.json
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\scopedcss\bundle\test-verifiering.styles.css
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\test-verifiering.csproj.CopyComplete
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\test-verifiering.dll
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\refint\test-verifiering.dll
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\test-verifiering.pdb
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\test-verifiering.genruntimeconfig.cache
+F:\GITHUB\TEST-VERIFIERING\API for webshop\test-verifiering\obj\Debug\net7.0\ref\test-verifiering.dll
