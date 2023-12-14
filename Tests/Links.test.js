@@ -18,5 +18,4 @@ describe('Navbar Links', () => {
 
     expect(homeLink.getAttribute('href')).toBe('index.html');
   });
-
 });

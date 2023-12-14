@@ -390,8 +390,6 @@ exports[`HTML Snapshot ska matcha snapshot 1`] = `
     <script src="js/main.js"></script>
     <script src="js/products.js"></script>
     <!-- Add this script block at the end of your HTML body -->
-    
-
 </body>
 
 </html>"
