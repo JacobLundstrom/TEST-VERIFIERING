@@ -12,5 +12,12 @@ namespace test_verifiering
             Name = name;
             Price = price;
         }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is Product product &&
+                   Name == product.Name &&
+                   Price == product.Price;
+        }
     }
 }
