@@ -13,7 +13,7 @@ describe('HTML Value Tests', () => {
   test('Check if specific values match on different HTML pages', () => {
     // Replace these paths with your actual HTML file paths
     const pathToPage1 = path.resolve(__dirname, '../Index.html');
-    const pathToPage2 = path.resolve(__dirname, '../Kamera.html');
+    const pathToPage2 = path.resolve(__dirname, '../Products/Kamera.html');
 
     // Load HTML content from files
     const htmlPage1 = fs.readFileSync(pathToPage1, 'utf-8');
