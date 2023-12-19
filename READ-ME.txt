@@ -1,0 +1,11 @@
+projeket ska vara en webbshop liknande till amazon och aliexpress där man kan köpa varor (kan vara vilken produkt som helst) kunna se vart på kartan lagret ligger och göra en checkout på dina varor.
+
+1.det finns flera sätt att starta upp projektet på, man kan använda github desktop, koppla in sig till repository som projektet ligger i och kunna komma in i visual studio code,
+
+alternativt kan man ladda ner mappen från github, få den i en zip fil och extrahera den som vanlig mapp, då kan man högerklicka på den och klicka på visual studio code för att starta upp.
+
+man kan också starta visual studio code, klicka på välj mapp och navigera till projektet
+
+2.när man väl är inne i projektet ska man navigera til terminalen som ligger längst upp i vänsta kanten beroende på din skärm storlek så kan den synas direkt eller visas det 3 prickar med en dropdown meny, då väljer man terminalen.
+
+3. inuti terminalen kan man skriva npm start för att köra igång projektet och få servern att gå live, alternativt kan du kolla till vänstra hörnet då du kommer se en radar lik symbol med meningen " Go Live " där kan du också klicka för att starta igång webbshoppen.
