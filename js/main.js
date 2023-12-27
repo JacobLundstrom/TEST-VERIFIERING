@@ -144,4 +144,25 @@ addCartBtns.forEach(btn => {
         }
     });
 
+// Make a GET request to the API
+fetch("http://localhost:5156/api/Shopping/products", {credentials:"include"})
+  .then(response => {
+    // Check if the request was successful (status code 200)
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    
+    // Parse the JSON data in the response
+    return response.json();
+  })
+  .then(data => {
+    // Handle the retrieved data
+    console.log('Data from API:', data);
+  })
+  .catch(error => {
+    // Handle errors
+    console.error('Error fetching data:', error);
+  });
+
+
 })(jQuery);
