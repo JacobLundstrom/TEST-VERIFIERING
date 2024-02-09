@@ -1,22 +1,26 @@
-let cart = []; 
-
-
+let cart = [];
 
 const addCartBtns = document.querySelectorAll('.product-action .btn-outline-dark');
 
 addCartBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const productId = btn.closest('.product-item').getAttribute('data-product-id');
-    const productName = btn.closest('.product-item').querySelector('.h6.text-decoration-none').textContent;
-    const productPrice = parseInt(btn.closest('.product-item').querySelector('.rabatt').textContent);
+    btn.addEventListener('click', () => {
+        const productId = btn.closest('.product-item').getAttribute('data-product-id');
+        const productName = btn.closest('.product-item').querySelector('.h6.text-decoration-none').textContent;
+        const productPrice = btn.closest('.product-item').querySelector('.rabatt').textContent;
 
-    addToCart(productId, productName, productPrice); // Add product to cart
-  });
+        var queryString = `?name=${productName}&price=${productPrice.replace("kr", "")}`
+
+        // Make a POST request to the API with query parameters
+        fetch(`http://localhost:5156/api/Shopping/add${queryString}`, {
+            method: "POST",
+            credentials: "include",
+        });
+    });
 });
 
 (function ($) {
     "use strict";
-    
+
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
@@ -33,7 +37,7 @@ addCartBtns.forEach(btn => {
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
     });
-    
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -43,7 +47,7 @@ addCartBtns.forEach(btn => {
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -55,20 +59,20 @@ addCartBtns.forEach(btn => {
         autoplay: true,
         smartSpeed: 1000,
         responsive: {
-            0:{
-                items:2
+            0: {
+                items: 2
             },
-            576:{
-                items:3
+            576: {
+                items: 3
             },
-            768:{
-                items:4
+            768: {
+                items: 4
             },
-            992:{
-                items:5
+            992: {
+                items: 5
             },
-            1200:{
-                items:6
+            1200: {
+                items: 6
             }
         }
     });
@@ -81,17 +85,17 @@ addCartBtns.forEach(btn => {
         autoplay: true,
         smartSpeed: 1000,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:2
+            576: {
+                items: 2
             },
-            768:{
-                items:3
+            768: {
+                items: 3
             },
-            992:{
-                items:4
+            992: {
+                items: 4
             }
         }
     });
@@ -113,7 +117,7 @@ addCartBtns.forEach(btn => {
     });
 
     $(document).ready(function () {
-        updateTotal(); 
+        updateTotal();
 
         $('.quantity button').on('click', function () {
             updateTotal();
@@ -130,7 +134,7 @@ addCartBtns.forEach(btn => {
                 var subtotal = price * quantity;
 
                 total += subtotal;
-                
+
                 // Update the total column in the current row
                 $(this).find('.align-middle:eq(3)').text(subtotal.toFixed(2).replace('.', ',') + ' kr');
             });
@@ -143,5 +147,21 @@ addCartBtns.forEach(btn => {
             $('#totaltValue').text(total.toFixed(2).replace('.', ',') + ' kr');
         }
     });
+
+    // Make a GET request to the API
+    fetch("http://localhost:5156/api/Shopping/products", { credentials: "include" })
+        .then(response => {
+            // Check if the request was successful (status code 200)
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            // Parse the JSON data in the response
+            return response.json();
+        })
+        .then(data => {
+            // Handle the retrieved data
+            console.log('Data from API:', data);
+        });
 
 })(jQuery);
